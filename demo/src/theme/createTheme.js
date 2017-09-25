@@ -1,4 +1,5 @@
 import LightTheme from './PresetThemes/LightTheme'
+import merge from 'lodash.merge'
 
 /**
  * Create a new theme object base on default theme and input theme
@@ -8,6 +9,6 @@ import LightTheme from './PresetThemes/LightTheme'
  * @param {object} more 
  * @returns {object}
  */
-export default function createTheme (theme = {}) {
-  return {...LightTheme, ...theme}
+export default function createTheme (theme = {}, ...more) {
+  return merge({}, LightTheme, theme, ...more)
 }

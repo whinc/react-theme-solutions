@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {FlatButton} from './theme'
+import MyButton from './MyButton'
 
 class App extends Component {
   render() {
     return (
       <div style={{margin: 20}}>
-          <FlatButton title={'button'} />
+          <FlatButton title={'FlatButton'} />
+          <MyButton title={'MyButton'} />
       </div>
     );
   }
