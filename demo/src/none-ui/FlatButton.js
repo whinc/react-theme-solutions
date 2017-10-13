@@ -17,14 +17,13 @@ class FlatButton extends Component {
   render () {
     const {title} = this.props
     const {
-      fontFamily,
-      borderRadius,
-      palette: {
-        primaryColor,
-        textColor
+      flatButton: {
+        borderRadius,
+        textColor,
+        backgroundColor
       }
     } = this.context.theme
-    return <button style={{backgroundColor: primaryColor, color: textColor, fontFamily, borderRadius}}>{title}</button>
+    return <button style={{ backgroundColor, color: textColor, borderRadius }}>{title}</button>
   }
 }
 

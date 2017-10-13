@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {FlatButton} from './theme'
+import {FlatButton} from './none-ui'
 import MyButton from './MyButton'
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div style={{margin: 20}}>
           <FlatButton title={'FlatButton'} />
-          <MyButton title={'MyButton'} />
+          {/* {<MyButton title={'MyButton'} />} */}
       </div>
     );
   }
